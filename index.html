@@ -309,7 +309,7 @@
                  <div class="col-sm-12">
                      <div class="form-group">
                       <label><span class="title">問題或分享</span><span class="text-primary">*</span></label>
-                      <input type="text" class="form-control" name="entry.725386323" id="725386323" />
+                      <input type="text" class="form-control" name="entry.537575936" id="537575936" />
                      </div>
                  </div>
                          
@@ -321,7 +321,64 @@
      
              </form>
          </div>
-       
+       <!--表單標題結束-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <!-- 表單驗證 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  
+    <script>
+        $(function(){
+            $("#myForm").validate({
+                submitHandler: function(form){
+                    form.submit();
+                },
+                rules: {
+                    'entry.725386323' : {
+                        required: true
+                     },
+                     'entry.1298340678':{
+                        required:true,
+                        
+                    },'entry.1881653649' :{
+                        required:true,
+                        
+                  
+                    },  'entry.537575936':{
+                        required:true,
+                        
+                    
+
+                    }
+                },  
+                     
+                
+                messages: {
+                    'entry.725386323' : {
+            required: "必填"
+          },
+          'entry.1298340678' : {
+            required: "必選"
+          },
+          'entry.1881653649' : {
+            required: "必選"
+        },
+          
+          
+          'entry.537575936' : {
+            required: "必選"
+                    }
+                }
+            });
+
+        });
+
+    </script>
     </section><!-- End Contact Us Section -->
 
   </main><!-- End #main -->
